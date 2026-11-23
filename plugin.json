@@ -1,0 +1,28 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "opentickers",
+  "displayName": "OpenTickers",
+  "version": "1.0.0",
+  "description": "Query central bank exchange rates, historical FX series, financial indicators, and SAP CSV exports via the OpenTickers MCP server.",
+  "logo": "assets/logo.svg",
+  "author": {
+    "name": "OpenTickers",
+    "url": "https://opentickers.com"
+  },
+  "homepage": "https://opentickers.com",
+  "repository": "https://github.com/leobrog/opentickers-mcp",
+  "license": "MIT",
+  "keywords": [
+    "exchange-rates",
+    "fx",
+    "financial-indicators",
+    "central-banks",
+    "sap-csv",
+    "mcp"
+  ],
+  "suggestedPrompts": [
+    "Get the latest USD/EUR and USD/BRL exchange rates from ECB and BCB",
+    "List available central bank data sources and supported currencies in OpenTickers",
+    "Export last week's EUR/USD and EUR/GBP exchange rates in SAP CSV format"
+  ]
+}

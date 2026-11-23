@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "opentickers": {
+      "url": "https://mcp.opentickers.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${OPENTICKERS_API_KEY}"
+      },
+      "variables": [
+        {
+          "name": "OPENTICKERS_API_KEY",
+          "title": "OpenTickers API Key",
+          "description": "Your OpenTickers API key (starts with ot_). Free keys work for latest rates, indicators, and reference endpoints; Pro/Partner unlocks historical and batch queries.",
+          "link": "https://opentickers.com"
+        }
+      ]
+    }
+  }
+}

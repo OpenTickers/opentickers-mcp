@@ -43,6 +43,16 @@ Create an API key at **[opentickers.com](https://opentickers.com)**, then config
 }
 ```
 
+### Google Antigravity (`agy`)
+
+Install directly from GitHub as a native Antigravity plugin (bundles the `opentickers` remote MCP server, credential prompt for `OPENTICKERS_API_KEY`, and the `opentickers-data` skill):
+
+```bash
+agy plugin install https://github.com/leobrog/opentickers-mcp
+```
+
+Then enable it via `/plugin` in the CLI (or **Customizations → Installed** in the Antigravity App) to enter your OpenTickers API key.
+
 ### Claude Code
 
 ```bash
@@ -119,6 +129,16 @@ mcp-publisher publish
 ```
 
 *(Alternatively, set `"name": "io.github.leobrog/opentickers-mcp"` in `server.json` and authenticate with `mcp-publisher login github`.)*
+
+### Antigravity Marketplace (`antigravity-plugins-official`)
+
+`plugin.json`, `mcp_config.json`, `assets/logo.svg`, and `skills/opentickers-data/SKILL.md` form a native Antigravity plugin bundle.
+
+1. Validate locally with zero errors/warnings:
+   ```bash
+   agy plugin validate --strict
+   ```
+2. Submit the repository through the [Antigravity Marketplace partner intake form](https://forms.gle/2EX5RFYPoJe1UgxR9) (docs: https://antigravity.google/docs/build-plugins).
 
 ### Gemini CLI Extension Gallery
 
