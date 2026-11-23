@@ -1,0 +1,21 @@
+{
+  "name": "opentickers",
+  "version": "1.0.0",
+  "description": "Query central bank exchange rates, historical FX series, financial indicators, and SAP CSV exports from OpenTickers.",
+  "mcpServers": {
+    "opentickers": {
+      "httpUrl": "https://mcp.opentickers.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${OPENTICKERS_API_KEY}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "OpenTickers API Key",
+      "description": "Your OpenTickers API key (create one at https://opentickers.com).",
+      "envVar": "OPENTICKERS_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

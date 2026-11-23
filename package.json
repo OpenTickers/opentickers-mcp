@@ -1,0 +1,25 @@
+{
+  "name": "opentickers-mcp",
+  "version": "1.0.0",
+  "description": "Hosted Streamable HTTP MCP server for the OpenTickers exchange rates and financial indicators API",
+  "homepage": "https://opentickers.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leobrog/opentickers-mcp.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "hono": "^4.12.30",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}

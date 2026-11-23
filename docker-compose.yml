@@ -1,0 +1,22 @@
+services:
+  mcp:
+    build:
+      context: .
+      network: host
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    ports:
+      - "127.0.0.1:3001:3001"
+    env_file:
+      - .env
+    environment:
+      - PORT=3001
+      - OPENTICKERS_API_URL=${OPENTICKERS_API_URL:-http://api:3000}
+    networks:
+      - onerate-network
+    restart: unless-stopped
+
+networks:
+  onerate-network:
+    external: true

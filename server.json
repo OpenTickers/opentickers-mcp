@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.opentickers/opentickers",
+  "title": "OpenTickers",
+  "description": "Central bank exchange rates and financial indicators via the OpenTickers API.",
+  "version": "1.0.0",
+  "websiteUrl": "https://opentickers.com",
+  "repository": {
+    "url": "https://github.com/leobrog/opentickers-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.opentickers.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer authentication header for the OpenTickers API",
+          "value": "Bearer {api_key}",
+          "isRequired": true,
+          "isSecret": true,
+          "variables": {
+            "api_key": {
+              "description": "Your OpenTickers API key (create one at https://opentickers.com)",
+              "isRequired": true,
+              "isSecret": true,
+              "placeholder": "ot_..."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.log
+
+# Environment files (keep .env.example)
+.env
+.env.*
+!.env.example
+
+# MCP Registry publisher tokens & private keys
+.mcpregistry_*_token
+*.pem
+*.key
+
+# OS artifacts
+.DS_Store
+Thumbs.db
