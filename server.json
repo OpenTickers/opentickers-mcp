@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.opentickers/opentickers",
+  "name": "io.github.OpenTickers/opentickers",
   "title": "OpenTickers",
   "description": "Central bank exchange rates and financial indicators via the OpenTickers API.",
   "version": "1.0.0",

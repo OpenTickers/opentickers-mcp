@@ -120,7 +120,7 @@ bun test
 
 ### Official MCP Registry (`registry.modelcontextprotocol.io`)
 
-`server.json` conforms to the `2025-12-11` MCP Registry schema under the `io.github.opentickers/opentickers` namespace.
+`server.json` conforms to the `2025-12-11` MCP Registry schema under the `io.github.OpenTickers/opentickers` namespace.
 
 ```bash
 mcp-publisher validate
