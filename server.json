@@ -1,19 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.leobrog/opentickers",
+  "name": "io.github.opentickers/opentickers",
   "title": "OpenTickers",
   "description": "Central bank exchange rates and financial indicators via the OpenTickers API.",
   "version": "1.0.0",
   "websiteUrl": "https://opentickers.com",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/leobrog/opentickers-mcp/main/assets/logo.svg",
+      "src": "https://raw.githubusercontent.com/OpenTickers/opentickers-mcp/main/assets/logo.svg",
       "mimeType": "image/svg+xml",
       "sizes": ["any"]
     }
   ],
   "repository": {
-    "url": "https://github.com/leobrog/opentickers-mcp",
+    "url": "https://github.com/OpenTickers/opentickers-mcp",
     "source": "github"
   },
   "remotes": [

@@ -10,7 +10,7 @@
     "url": "https://opentickers.com"
   },
   "homepage": "https://opentickers.com",
-  "repository": "https://github.com/leobrog/opentickers-mcp",
+  "repository": "https://github.com/OpenTickers/opentickers-mcp",
   "license": "MIT",
   "keywords": [
     "exchange-rates",

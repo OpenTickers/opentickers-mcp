@@ -48,7 +48,7 @@ Create an API key at **[opentickers.com](https://opentickers.com)**, then config
 Install directly from GitHub as a native Antigravity plugin (bundles the `opentickers` remote MCP server, credential prompt for `OPENTICKERS_API_KEY`, and the `opentickers-data` skill):
 
 ```bash
-agy plugin install https://github.com/leobrog/opentickers-mcp
+agy plugin install https://github.com/OpenTickers/opentickers-mcp
 ```
 
 Then enable it via `/plugin` in the CLI (or **Customizations → Installed** in the Antigravity App) to enter your OpenTickers API key.
@@ -65,7 +65,7 @@ claude mcp add --transport http opentickers https://mcp.opentickers.com/mcp \
 Install directly as a Gemini CLI extension (uses `gemini-extension.json`, which prompts securely for `OPENTICKERS_API_KEY` and stores it in your system keychain):
 
 ```bash
-gemini extensions install https://github.com/leobrog/opentickers-mcp
+gemini extensions install https://github.com/OpenTickers/opentickers-mcp
 ```
 
 Or add the remote MCP server directly:
@@ -120,11 +120,12 @@ bun test
 
 ### Official MCP Registry (`registry.modelcontextprotocol.io`)
 
-`server.json` conforms to the `2025-12-11` MCP Registry schema under the `io.github.leobrog/opentickers` namespace.
+`server.json` conforms to the `2025-12-11` MCP Registry schema under the `io.github.opentickers/opentickers` namespace.
 
 ```bash
 mcp-publisher validate
-mcp-publisher login github
+# Org namespaces require a PAT with read:org (classic) or Org Members: Read-only (fine-grained)
+mcp-publisher login github --token <GITHUB_PAT>
 mcp-publisher publish
 ```
 

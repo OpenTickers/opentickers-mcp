@@ -6,7 +6,7 @@
   "homepage": "https://opentickers.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leobrog/opentickers-mcp.git"
+    "url": "https://github.com/OpenTickers/opentickers-mcp.git"
   },
   "type": "module",
   "scripts": {
