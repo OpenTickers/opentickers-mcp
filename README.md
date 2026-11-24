@@ -43,6 +43,21 @@ Create an API key at **[opentickers.com](https://opentickers.com)**, then config
 }
 ```
 
+### SAP Joule Studio (SAP BTP)
+
+Connect the hosted MCP server to a custom Joule Agent via the SAP BTP Destination Service:
+
+1. In **SAP BTP Cockpit → Subaccount → Connectivity → Destinations**, create a new destination:
+   * **Name:** `OpenTickers_MCP`
+   * **Type:** `HTTP`
+   * **URL:** `https://mcp.opentickers.com/mcp`
+   * **Proxy Type:** `Internet`
+   * **Authentication:** `NoAuthentication`
+2. Add two **Additional Properties**:
+   * `sap-joule-studio-mcp-server` = `true`
+   * `URL.headers.Authorization` = `Bearer ot_your_api_key_here`
+3. In **SAP Build → Joule Studio**, open your Joule Agent project, go to **Tools**, and select the `OpenTickers_MCP` destination to expose all 10 OpenTickers tools.
+
 ### Google Antigravity (`agy`)
 
 Install directly from GitHub as a native Antigravity plugin (bundles the `opentickers` remote MCP server, credential prompt for `OPENTICKERS_API_KEY`, and the `opentickers-data` skill):
@@ -145,3 +160,10 @@ mcp-publisher publish
 
 1. Add the repository topic **`gemini-cli-extension`** on GitHub (`About` → gear icon).
 2. Publish a GitHub Release (e.g. `v1.0.0`). The Gemini CLI gallery crawler indexes it automatically.
+
+### SAP AI Skills Library (`skills.cloud.sap`)
+
+This repository follows the `SAP/ai-skills-library` bring-your-own-repo convention (`skills/opentickers-data/SKILL.md`, `LICENSE`, and author metadata in `package.json`).
+
+1. Open a **[Register a New Skill](https://github.com/SAP/ai-skills-library/issues/new?template=new-skill.yml)** issue on `SAP/ai-skills-library`.
+2. Provide `https://github.com/OpenTickers/opentickers-mcp` and the `opentickers-data` skill details. Once onboarded by maintainers, users can discover it on `skills.cloud.sap` and install it via `npx skills add SAP/ai-skills-library --skill opentickers-data`.

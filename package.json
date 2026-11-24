@@ -2,6 +2,10 @@
   "name": "opentickers-mcp",
   "version": "1.0.1",
   "license": "MIT",
+  "author": {
+    "name": "OpenTickers",
+    "url": "https://opentickers.com"
+  },
   "description": "Hosted Streamable HTTP MCP server for the OpenTickers exchange rates and financial indicators API",
   "homepage": "https://opentickers.com",
   "repository": {
