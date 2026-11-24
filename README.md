@@ -120,15 +120,15 @@ bun test
 
 ### Official MCP Registry (`registry.modelcontextprotocol.io`)
 
-`server.json` conforms to the `2025-12-11` MCP Registry schema under the `com.opentickers/opentickers` namespace.
+`server.json` conforms to the `2025-12-11` MCP Registry schema under the `io.github.leobrog/opentickers` namespace.
 
 ```bash
-brew install mcp-publisher
-mcp-publisher login dns --domain opentickers.com --private-key <hex-key>
+mcp-publisher validate
+mcp-publisher login github
 mcp-publisher publish
 ```
 
-*(Alternatively, set `"name": "io.github.leobrog/opentickers-mcp"` in `server.json` and authenticate with `mcp-publisher login github`.)*
+*(Alternatively, set `"name": "com.opentickers/opentickers"` in `server.json` and authenticate with `mcp-publisher login dns --domain opentickers.com`.)*
 
 ### Antigravity Marketplace (`antigravity-plugins-official`)
 
