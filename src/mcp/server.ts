@@ -16,7 +16,7 @@ export interface McpServerOptions {
 export function createMcpServer({ apiKey, baseUrl, fetchImpl }: McpServerOptions): McpServer {
   const server = new McpServer({
     name: "opentickers-mcp",
-    version: "1.0.0",
+    version: "1.0.1",
   });
 
   const client = new OpenTickersClient(baseUrl, apiKey, fetchImpl);

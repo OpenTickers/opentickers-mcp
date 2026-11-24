@@ -3,7 +3,7 @@
   "name": "io.github.OpenTickers/opentickers",
   "title": "OpenTickers",
   "description": "Central bank exchange rates and financial indicators via the OpenTickers API.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://opentickers.com",
   "icons": [
     {

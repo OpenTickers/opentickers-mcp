@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "opentickers",
   "displayName": "OpenTickers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Query central bank exchange rates, historical FX series, financial indicators, and SAP CSV exports via the OpenTickers MCP server.",
   "logo": "assets/logo.svg",
   "author": {

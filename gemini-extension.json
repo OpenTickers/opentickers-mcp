@@ -1,6 +1,6 @@
 {
   "name": "opentickers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Query central bank exchange rates, historical FX series, financial indicators, and SAP CSV exports from OpenTickers.",
   "mcpServers": {
     "opentickers": {

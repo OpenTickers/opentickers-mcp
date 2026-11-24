@@ -40,7 +40,7 @@ export function createApp(config: AppConfig = {}) {
     return c.json(
       {
         name: "opentickers-mcp",
-        version: "1.0.0",
+        version: "1.0.1",
         mcpEndpoint: "/mcp",
         auth: "Pass your OpenTickers API key via the 'Authorization: Bearer <API_KEY>' header.",
       },
