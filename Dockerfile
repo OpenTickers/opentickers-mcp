@@ -10,7 +10,7 @@ COPY src ./src
 COPY tsconfig.json ./
 
 ENV NODE_ENV=production
-ENV PORT=3001
+ENV PORT=29473
 
-EXPOSE 3001
+EXPOSE 29473
 CMD ["bun", "run", "src/index.ts"]

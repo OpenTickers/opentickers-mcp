@@ -104,6 +104,6 @@ export function createApp(config: AppConfig = {}) {
 const app = createApp();
 
 export default {
-  port: Number(process.env.PORT ?? 3001),
+  port: Number(process.env.PORT ?? 29473),
   fetch: app.fetch,
 };

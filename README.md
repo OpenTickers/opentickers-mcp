@@ -100,13 +100,13 @@ cp .env.example .env
 docker compose up -d --build
 ```
 
-The server listens on `http://127.0.0.1:3001` (`POST /mcp`, `GET /health`). Place it behind a TLS reverse proxy for public HTTPS access.
+The server listens on `http://127.0.0.1:29473` (`POST /mcp`, `GET /health`). Place it behind a TLS reverse proxy for public HTTPS access.
 
 ### Environment Variables
 
 | Variable | Default | Description |
 | --- | --- | --- |
-| `PORT` | `3001` | HTTP port to listen on |
+| `PORT` | `29473` | HTTP port to listen on |
 | `OPENTICKERS_API_URL` | `http://api:3000` | Base URL of the OpenTickers REST API |
 | `CORS_ORIGIN` | `*` | Allowed CORS origin(s) |
 

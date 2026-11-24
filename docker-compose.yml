@@ -7,11 +7,11 @@ services:
       - 8.8.8.8
       - 1.1.1.1
     ports:
-      - "127.0.0.1:3001:3001"
+      - "127.0.0.1:29473:29473"
     env_file:
       - .env
     environment:
-      - PORT=3001
+      - PORT=29473
       - OPENTICKERS_API_URL=${OPENTICKERS_API_URL:-http://api:3000}
     networks:
       - onerate-network
